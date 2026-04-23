@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://jjcsvtcksc6w"]
 
 [ext_resource type="PackedScene" uid="uid://b338gk0gnrcw5" path="res://Escenes/limits.tscn" id="1_l3s5o"]
-[ext_resource type="PackedScene" uid="uid://cku7suwc4k1wb" path="res://icon.tscn" id="2_bxi00"]
+[ext_resource type="PackedScene" uid="uid://bhwlm2nhwgaac" path="res://Escenes/personatge.tscn" id="2_l3s5o"]
 
 [node name="Joc" type="Node2D" unique_id=1897595839]
 
 [node name="limits" parent="." unique_id=141493624 instance=ExtResource("1_l3s5o")]
 
-[node name="CharacterBody2D" parent="." unique_id=293533736 instance=ExtResource("2_bxi00")]
-position = Vector2(557, 319)
+[node name="Jugador" parent="." unique_id=293533736 instance=ExtResource("2_l3s5o")]
+position = Vector2(385, 334)
