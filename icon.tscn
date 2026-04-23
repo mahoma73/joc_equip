@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://cku7suwc4k1wb"]
 
-[ext_resource type="Texture2D" uid="uid://dttg8mbijj5yl" path="res://icon.svg" id="1_q6a08"]
+[ext_resource type="Texture2D" uid="uid://bt88kx5kdma8y" path="res://Imatges/Tiles/Characters/tile_0000.png" id="1_tr34o"]
 
-[node name="Icon" type="Sprite2D" unique_id=204701247]
-position = Vector2(567, 294)
-texture = ExtResource("1_q6a08")
+[node name="Node2D" type="Node2D" unique_id=832319357]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1548204271]
+position = Vector2(464.5, 313)
+scale = Vector2(11.875001, 11.833333)
+texture = ExtResource("1_tr34o")
