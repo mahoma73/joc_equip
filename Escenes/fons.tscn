@@ -2,9 +2,18 @@
 
 [ext_resource type="Texture2D" uid="uid://crh7fxa3vkdxf" path="res://Imatges/Tilemap/fons_gris.png" id="1_d1q27"]
 
-[node name="FonsGris" type="Sprite2D" unique_id=395981853]
+[node name="Fons_arbres" type="TextureRect" unique_id=1919439537]
 texture_filter = 1
-texture_repeat = 2
-position = Vector2(2.842171e-14, 0)
-scale = Vector2(1.8958334, 2.2222223)
+offset_left = -7.0
+offset_top = 307.0
+offset_right = 1167.0
+offset_bottom = 378.0
+mouse_filter = 2
 texture = ExtResource("1_d1q27")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1524407600]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
