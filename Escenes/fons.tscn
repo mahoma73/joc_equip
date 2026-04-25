@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://u5ci1fdofqid"]
+
+[ext_resource type="Texture2D" uid="uid://crh7fxa3vkdxf" path="res://Imatges/Tilemap/fons_gris.png" id="1_d1q27"]
+
+[node name="FonsGris" type="Sprite2D" unique_id=395981853]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(2.842171e-14, 0)
+scale = Vector2(1.8958334, 2.2222223)
+texture = ExtResource("1_d1q27")
