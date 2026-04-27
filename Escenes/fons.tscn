@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://u5ci1fdofqid"]
 
 [ext_resource type="Texture2D" uid="uid://crh7fxa3vkdxf" path="res://Imatges/Tilemap/fons_gris.png" id="1_d1q27"]
+[ext_resource type="Texture2D" uid="uid://f4e6rmrbncme" path="res://Imatges/Tiles/Backgrounds/tile_0000.png" id="2_32h3u"]
+[ext_resource type="Texture2D" uid="uid://djgp5yowkd8v1" path="res://Imatges/Tiles/Backgrounds/tile_0018.png" id="3_swy6v"]
 
 [node name="Fons_arbres" type="TextureRect" unique_id=1919439537]
 texture_filter = 1
@@ -12,3 +14,19 @@ mouse_filter = 2
 texture = ExtResource("1_d1q27")
 expand_mode = 1
 stretch_mode = 1
+
+[node name="fons_cel" type="TextureRect" parent="." unique_id=733508617]
+layout_mode = 0
+offset_left = -19.0
+offset_top = -331.0
+offset_right = 1188.0
+offset_bottom = 15.0
+texture = ExtResource("2_32h3u")
+
+[node name="fons_terra" type="TextureRect" parent="." unique_id=1304859456]
+layout_mode = 0
+offset_left = -22.0
+offset_top = 67.0
+offset_right = 1185.0
+offset_bottom = 365.0
+texture = ExtResource("3_swy6v")
