@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b3lqq6n3tn5yl"]
+
+[ext_resource type="Texture2D" uid="uid://d2i6hkcpkcu3e" path="res://Imatges/Tiles/Characters/tile_0008.png" id="1_rfkgt"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1875103889]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=222066390]
+texture_filter = 1
+position = Vector2(-7.6293945e-06, 0)
+scale = Vector2(1.6666664, 1.375)
+texture = ExtResource("1_rfkgt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=363426162]
