@@ -322,5 +322,4 @@ sources/0 = SubResource("TileSetAtlasSource_8afj2")
 
 [node name="TileMapLayer" type="TileMapLayer" unique_id=1479219733]
 texture_filter = 1
-tile_map_data = PackedByteArray(0, 0, 24, 0, 28, 0, 0, 0, 4, 0, 1, 0, 0, 0, 24, 0, 27, 0, 0, 0, 1, 0, 0, 0, 0, 0)
 tile_set = SubResource("TileSet_koimr")
