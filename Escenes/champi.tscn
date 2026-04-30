@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dcbj3nfffa8h3"]
+
+[ext_resource type="Script" uid="uid://13qjdjoc60e1" path="res://champi.gd" id="1_u2e0w"]
+[ext_resource type="Texture2D" uid="uid://wk4gr3o2xm1j" path="res://Imatges/Tiles/Characters/tile_0021.png" id="2_1sc07"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u2e0w"]
+size = Vector2(38, 31.5)
+
+[node name="champi" type="CharacterBody2D" unique_id=1481720234]
+script = ExtResource("1_u2e0w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1459741243]
+texture_filter = 1
+position = Vector2(1152, -2)
+scale = Vector2(2, 2)
+texture = ExtResource("2_1sc07")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1278806907]
+position = Vector2(1152, 0)
+shape = SubResource("RectangleShape2D_u2e0w")
