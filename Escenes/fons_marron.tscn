@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dagpjur2fgba7"]
+
+[ext_resource type="Texture2D" uid="uid://djhbc1nnys5lk" path="res://Imatges/Tilemap/fons_marro.png" id="1_niip1"]
+
+[node name="TextureRect" type="TextureRect" unique_id=1247358892]
+texture_filter = 1
+offset_left = -10.0
+offset_top = 273.0
+offset_right = 1153.0
+offset_bottom = 339.0
+texture = ExtResource("1_niip1")
+expand_mode = 1
+stretch_mode = 1
