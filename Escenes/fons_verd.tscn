@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://byg751miffq3a"]
+
+[ext_resource type="Texture2D" uid="uid://dt6mqdb4ofjfh" path="res://Imatges/Tilemap/fons_verd.png" id="1_n6m52"]
+[ext_resource type="Texture2D" uid="uid://de3x16r6yodvu" path="res://Imatges/Tiles/Backgrounds/tile_0006.png" id="2_gqdpb"]
+[ext_resource type="Texture2D" uid="uid://c3turdjgtxaf" path="res://Imatges/Tiles/Backgrounds/tile_0023.png" id="3_gdc82"]
+
+[node name="fons_arbres_verd" type="TextureRect" unique_id=489414321]
+texture_filter = 1
+texture_repeat = 3
+offset_left = -34.0
+offset_top = 160.0
+offset_right = 381.33334
+offset_bottom = 232.0
+scale = Vector2(3, 3)
+texture = ExtResource("1_n6m52")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="fons_cel_verd" type="TextureRect" parent="." unique_id=704567674]
+layout_mode = 0
+offset_left = 8.333334
+offset_top = -56.0
+offset_right = 409.00003
+offset_bottom = 0.6666641
+texture = ExtResource("2_gqdpb")
+
+[node name="fons_terra_verd" type="TextureRect" parent="." unique_id=1346760775]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 65.0
+offset_right = 418.33334
+offset_bottom = 181.0
+texture = ExtResource("3_gdc82")

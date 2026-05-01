@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://fmweauwa22u2"]
+
+[ext_resource type="Texture2D" uid="uid://crh7fxa3vkdxf" path="res://Imatges/Tilemap/fons_gris.png" id="1_cy84g"]
+[ext_resource type="Texture2D" uid="uid://f4e6rmrbncme" path="res://Imatges/Tiles/Backgrounds/tile_0000.png" id="2_8gt64"]
+[ext_resource type="Texture2D" uid="uid://djgp5yowkd8v1" path="res://Imatges/Tiles/Backgrounds/tile_0018.png" id="3_2yi4i"]
+
+[node name="Fons_arbres_gris" type="TextureRect" unique_id=1919439537]
+texture_filter = 1
+texture_repeat = 1
+offset_left = -16.0
+offset_top = 150.0
+offset_right = 389.237
+offset_bottom = 223.33301
+scale = Vector2(3, 3)
+mouse_filter = 2
+texture = ExtResource("1_cy84g")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="fons_cel_gris" type="TextureRect" parent="." unique_id=733508617]
+layout_mode = 0
+offset_left = 1.3333378
+offset_top = -83.666626
+offset_right = 421.00003
+offset_bottom = 0.3333435
+texture = ExtResource("2_8gt64")
+
+[node name="fons_terra_gris" type="TextureRect" parent="." unique_id=1304859456]
+layout_mode = 0
+offset_left = -4.666664
+offset_top = 71.33333
+offset_right = 425.33334
+offset_bottom = 163.99998
+texture = ExtResource("3_2yi4i")
