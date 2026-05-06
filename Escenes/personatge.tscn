@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bt88kx5kdma8y" path="res://Imatges/Tiles/Characters/tile_0000.png" id="2_0tyg0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_otv2m"]
-size = Vector2(59, 72)
+size = Vector2(59, 76)
 
 [node name="Jugador" type="CharacterBody2D" unique_id=293533736]
 script = ExtResource("1_ttrkr")
@@ -15,5 +15,5 @@ scale = Vector2(3.5833342, 3.4583325)
 texture = ExtResource("2_0tyg0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1783962689]
-position = Vector2(-1, 2)
+position = Vector2(-1, 4)
 shape = SubResource("RectangleShape2D_otv2m")
