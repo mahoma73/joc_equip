@@ -1,3 +1,18 @@
 [gd_scene format=3 uid="uid://boericwukrww7"]
 
-[node name="Node2D" type="Node2D" unique_id=472491036]
+[ext_resource type="Texture2D" uid="uid://xxhwt7cpf70h" path="res://Imatges/Tiles/Characters/tile_0024.png" id="1_onmgx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wh7mn"]
+
+[node name="Node2D" type="CharacterBody2D" unique_id=231759352]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=922062152]
+texture_filter = 1
+position = Vector2(601, 298)
+scale = Vector2(2, 2)
+texture = ExtResource("1_onmgx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1681024414]
+texture_filter = 1
+position = Vector2(601, 303)
+shape = SubResource("CircleShape2D_wh7mn")
