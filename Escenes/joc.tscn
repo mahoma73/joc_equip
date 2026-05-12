@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://b338gk0gnrcw5" path="res://Escenes/limits.tscn" id="1_l3s5o"]
 [ext_resource type="PackedScene" uid="uid://byg751miffq3a" path="res://Escenes/fons_verd.tscn" id="2_yip7x"]
-[ext_resource type="PackedScene" uid="uid://dcbj3nfffa8h3" path="res://Escenes/champi.tscn" id="3_rm3ff"]
 [ext_resource type="PackedScene" uid="uid://bhwlm2nhwgaac" path="res://Escenes/personatge.tscn" id="4_dx0qk"]
+[ext_resource type="PackedScene" uid="uid://nfl8t2ogswp2" path="res://Escenes/bat.tscn" id="4_rm3ff"]
 
 [node name="Joc" type="Node2D" unique_id=1897595839]
 
@@ -11,6 +11,8 @@
 
 [node name="fons_arbres_verd" parent="." unique_id=489414321 instance=ExtResource("2_yip7x")]
 
-[node name="champi" parent="." unique_id=1481720234 instance=ExtResource("3_rm3ff")]
+[node name="Node2D" parent="." unique_id=472491036 instance=ExtResource("4_rm3ff")]
+position = Vector2(1092.3668, 43.501617)
 
 [node name="Jugador" parent="." unique_id=293533736 instance=ExtResource("4_dx0qk")]
+position = Vector2(0, 1)
