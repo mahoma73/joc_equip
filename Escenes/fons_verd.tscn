@@ -7,10 +7,10 @@
 [node name="fons_arbres_verd" type="TextureRect" unique_id=489414321]
 texture_filter = 1
 texture_repeat = 3
-offset_left = -34.0
-offset_top = 160.0
-offset_right = 381.33334
-offset_bottom = 232.0
+offset_left = -467.0
+offset_top = 162.0
+offset_right = 503.33337
+offset_bottom = 234.0
 scale = Vector2(3, 3)
 texture = ExtResource("1_n6m52")
 expand_mode = 1
@@ -18,16 +18,17 @@ stretch_mode = 1
 
 [node name="fons_cel_verd" type="TextureRect" parent="." unique_id=704567674]
 layout_mode = 0
-offset_left = 8.333334
-offset_top = -56.0
-offset_right = 409.00003
-offset_bottom = 0.6666641
+offset_left = -155.00002
+offset_top = -124.66667
+offset_right = 972.0001
+offset_bottom = 4.6666718
 texture = ExtResource("2_gqdpb")
+expand_mode = 2
 
 [node name="fons_terra_verd" type="TextureRect" parent="." unique_id=1346760775]
 layout_mode = 0
 offset_left = 5.0
 offset_top = 65.0
-offset_right = 418.33334
+offset_right = 972.6667
 offset_bottom = 181.0
 texture = ExtResource("3_gdc82")
