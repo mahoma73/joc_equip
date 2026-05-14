@@ -18,7 +18,7 @@ animations = [{
 "texture": ExtResource("4_k0drr")
 }],
 "loop": true,
-"name": &"default",
+"name": &"animacio_champi",
 "speed": 5.0
 }]
 
@@ -36,7 +36,8 @@ texture_filter = 1
 position = Vector2(1152, -6)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_sy02a")
-frame_progress = 0.015341857
+animation = &"animacio_champi"
+frame_progress = 0.11661633
 
 [node name="colisio_mort_jugador" type="CollisionShape2D" parent="." unique_id=1278806907]
 visible = false

@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://nfl8t2ogswp2" path="res://Escenes/bat.tscn" id="4_rm3ff"]
 [ext_resource type="PackedScene" uid="uid://dnbykqjqri5ye" path="res://Escenes/tile_map_layer.tscn" id="5_rm3ff"]
 [ext_resource type="Script" uid="uid://dnqjlurfrjiju" path="res://Escenes/personatge.gd" id="6_djj6t"]
+[ext_resource type="PackedScene" uid="uid://dcbj3nfffa8h3" path="res://Escenes/champi.tscn" id="7_4pnwr"]
 
 [node name="Joc" type="Node2D" unique_id=1897595839]
 
@@ -30,3 +31,5 @@ position = Vector2(-1, 0)
 
 [node name="Node2D" parent="." unique_id=472491036 instance=ExtResource("4_rm3ff")]
 position = Vector2(1107, 69)
+
+[node name="champi" parent="." unique_id=1481720234 instance=ExtResource("7_4pnwr")]

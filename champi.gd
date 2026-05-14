@@ -14,13 +14,16 @@ func _physics_process(delta: float) -> void:
 
 	if is_on_wall():
 		direccio *= -1
-func anima(velocitat):
-	if velocitat > 0:
-		animated_sprite_2d.play("volar")
-		animated_sprite_2d.flip_h = false
-	elif velocitat < 0:
-		animated_sprite_2d.play("volar")
+	anima(velocity)
+		
+		
+func anima(velocitat:Vector2):
+	if velocitat.x > 0:
+		animated_sprite_2d.play("animacio_champi")
 		animated_sprite_2d.flip_h = true
+	elif velocitat.x < 0:
+		animated_sprite_2d.play("animacio_champi")
+		animated_sprite_2d.flip_h = false
 	
 		
 		
