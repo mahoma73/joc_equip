@@ -1,9 +1,10 @@
 extends CharacterBody2D
 
-
+var vides : int = 3
 const SPEED = 300
 const JUMP_VELOCITY = -400.0
-
+func resta_vida():
+	vides-=1
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
@@ -22,3 +23,7 @@ func _physics_process(delta: float) -> void:
 		#velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+func mor():
+	print("M'he mort!")

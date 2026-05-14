@@ -22,28 +22,32 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_u2e0w"]
-size = Vector2(40, 31.75)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1sc07"]
 size = Vector2(36, 4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u2e0w"]
+size = Vector2(40, 26.875)
 
 [node name="champi" type="CharacterBody2D" unique_id=1481720234]
 script = ExtResource("1_u2e0w")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=71190858]
 texture_filter = 1
-position = Vector2(1152, -6)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_sy02a")
 frame_progress = 0.015341857
 
-[node name="colisio_mort_jugador" type="CollisionShape2D" parent="." unique_id=1278806907]
-visible = false
-position = Vector2(1152, -0.125)
+[node name="MortChampi" type="Area2D" parent="." unique_id=126474537]
+
+[node name="colisio_mort_champi" type="CollisionShape2D" parent="MortChampi" unique_id=947295843]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_1sc07")
+
+[node name="MortJugador" type="Area2D" parent="." unique_id=1386725385]
+
+[node name="colisio_mort_jugador" type="CollisionShape2D" parent="MortJugador" unique_id=1091942488]
+position = Vector2(0, 2.4375)
 shape = SubResource("RectangleShape2D_u2e0w")
 
-[node name="colisio_mort_champi" type="CollisionShape2D" parent="." unique_id=947295843]
-visible = false
-position = Vector2(1152, -20)
-shape = SubResource("RectangleShape2D_1sc07")
+[connection signal="body_entered" from="MortChampi" to="." method="_on_mort_champi_body_entered"]
+[connection signal="body_entered" from="MortJugador" to="." method="_on_mort_jugador_body_entered"]

@@ -21,6 +21,12 @@ func anima(velocitat):
 	elif velocitat < 0:
 		animated_sprite_2d.play("volar")
 		animated_sprite_2d.flip_h = true
-	
-		
-		
+func _on_area_entered(area: Area2D) -> void:
+	area.resta_vida()
+
+func _on_mort_champi_body_entered(body: Node2D) -> void:
+	queue_free()
+
+
+func _on_mort_jugador_body_entered(body: Node2D) -> void:
+	body.mor()
