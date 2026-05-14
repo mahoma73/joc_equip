@@ -7,9 +7,9 @@
 [node name="fons_arbres_marro" type="TextureRect" unique_id=1247358892]
 texture_filter = 1
 texture_repeat = 1
-offset_left = -16.0
+offset_left = -1139.0
 offset_top = 215.0
-offset_right = 400.6667
+offset_right = -347.99994
 offset_bottom = 283.6667
 scale = Vector2(3, 3)
 texture = ExtResource("1_whm2e")
@@ -18,17 +18,17 @@ stretch_mode = 1
 
 [node name="fons_cel_marro" type="TextureRect" parent="." unique_id=1610739521]
 layout_mode = 0
-offset_left = -14.666666
-offset_top = -87.333336
-offset_right = 419.33334
-offset_bottom = 2.0000076
+offset_left = 1.3333435
+offset_top = -84.66667
+offset_right = 791.0001
+offset_bottom = 4.6666718
 texture = ExtResource("2_vccw5")
 
 [node name="fons_terra_marro" type="TextureRect" parent="." unique_id=350349069]
 texture_filter = 1
 layout_mode = 0
-offset_left = 0.33333397
-offset_top = 59.0
-offset_right = 424.33334
-offset_bottom = 160.66667
+offset_left = 2.3333282
+offset_top = 68.33333
+offset_right = 791.0
+offset_bottom = 170.0
 texture = ExtResource("3_8nxf4")
