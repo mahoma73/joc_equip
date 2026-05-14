@@ -2,19 +2,36 @@
 
 [ext_resource type="Script" uid="uid://d33ri5ltllgy8" path="res://Scripts/character_body_2d.gd" id="1_ttrkr"]
 [ext_resource type="Texture2D" uid="uid://bt88kx5kdma8y" path="res://Imatges/Tiles/Characters/tile_0000.png" id="2_0tyg0"]
+[ext_resource type="Texture2D" uid="uid://c2jia6py7hh64" path="res://Imatges/Tiles/Characters/tile_0001.png" id="3_0tyg0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_otv2m"]
-size = Vector2(59, 76)
+size = Vector2(48, 66)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_grld7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0tyg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0tyg0")
+}],
+"loop": true,
+"name": &"animacio_personatge",
+"speed": 5.0
+}]
 
 [node name="Jugador" type="CharacterBody2D" unique_id=293533736]
 script = ExtResource("1_ttrkr")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1548204271]
-texture_filter = 1
-position = Vector2(192, 492.99994)
-scale = Vector2(3.5833342, 3.4583325)
-texture = ExtResource("2_0tyg0")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1783962689]
-position = Vector2(194, 497)
+position = Vector2(191, 495)
 shape = SubResource("RectangleShape2D_otv2m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1880301851]
+texture_filter = 1
+position = Vector2(191, 492)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_grld7")
+animation = &"animacio_personatge"
+frame_progress = 0.48181278

@@ -18,7 +18,7 @@ animations = [{
 "texture": ExtResource("4_k0drr")
 }],
 "loop": true,
-"name": &"default",
+"name": &"animacio_champi",
 "speed": 5.0
 }]
 
@@ -35,7 +35,8 @@ script = ExtResource("1_u2e0w")
 texture_filter = 1
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_sy02a")
-frame_progress = 0.015341857
+animation = &"animacio_champi"
+frame_progress = 0.11661633
 
 [node name="MortChampi" type="Area2D" parent="." unique_id=126474537]
 

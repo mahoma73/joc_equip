@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bblf1ipyhnmmn"]
+
+[ext_resource type="PackedScene" uid="uid://dnbykqjqri5ye" path="res://Escenes/tile_map_layer.tscn" id="1_4xqw8"]
+[ext_resource type="PackedScene" uid="uid://bhwlm2nhwgaac" path="res://Escenes/personatge.tscn" id="2_qn461"]
+
+[node name="Node2D" type="Node2D" unique_id=1720337078]
+
+[node name="TileMapLayer" parent="." unique_id=1479219733 instance=ExtResource("1_4xqw8")]
+
+[node name="Jugador" parent="." unique_id=293533736 instance=ExtResource("2_qn461")]
+position = Vector2(-34, 496)
+
+[node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=461556101]
+position = Vector2(618, -175)
