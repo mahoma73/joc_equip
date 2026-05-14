@@ -20,13 +20,13 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	#else:
 		#velocity.x = move_toward(velocity.x, 0, SPEED)
+	anima(direction)
 	move_and_slide()
-	anima(velocity)
 
-func anima(velocitat: Vector2):
-	if velocitat.x > 0:
+func anima(direction):
+	if direction == "ui_right":
 		animated_sprite_2d.play("animacio_personatge")
 		animated_sprite_2d.flip_h = true
-	elif velocitat.x < 0:
+	elif direction == "ui_left":
 		animated_sprite_2d.play("animacio_personatge")
 		animated_sprite_2d.flip_h = false
