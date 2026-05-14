@@ -29,4 +29,5 @@ func _on_mort_champi_body_entered(body: Node2D) -> void:
 
 
 func _on_mort_jugador_body_entered(body: Node2D) -> void:
-	body.mor()
+	if body.name == "Jugador":
+		body.mor()

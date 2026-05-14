@@ -50,5 +50,9 @@ shape = SubResource("RectangleShape2D_1sc07")
 position = Vector2(0, 2.4375)
 shape = SubResource("RectangleShape2D_u2e0w")
 
+[node name="colisio_mort_jugador2" type="CollisionShape2D" parent="." unique_id=2124956183]
+position = Vector2(0, 2.4375)
+shape = SubResource("RectangleShape2D_u2e0w")
+
 [connection signal="body_entered" from="MortChampi" to="." method="_on_mort_champi_body_entered"]
 [connection signal="body_entered" from="MortJugador" to="." method="_on_mort_jugador_body_entered"]

@@ -33,3 +33,4 @@ position = Vector2(-1, 0)
 position = Vector2(1107, 69)
 
 [node name="champi" parent="." unique_id=1481720234 instance=ExtResource("7_4pnwr")]
+position = Vector2(312, 515)
