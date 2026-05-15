@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bfkgohfw46lm6"]
+
+[ext_resource type="Texture2D" uid="uid://g6vb42a61nkw" path="res://Imatges/Tiles/tile_0044 - còpia.png" id="1_nx7e4"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1003917540]
+
+[node name="cor_ple1" type="Sprite2D" parent="." unique_id=1504500457]
+texture_filter = 1
+position = Vector2(-32, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("1_nx7e4")
+
+[node name="cor_ple2" type="Sprite2D" parent="." unique_id=192711614]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("1_nx7e4")
+
+[node name="cor_ple3" type="Sprite2D" parent="." unique_id=663804436]
+texture_filter = 1
+position = Vector2(32, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("1_nx7e4")

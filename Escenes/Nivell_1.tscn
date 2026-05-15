@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://byg751miffq3a" path="res://Escenes/fons_verd.tscn" id="2_yip7x"]
 [ext_resource type="PackedScene" uid="uid://bhwlm2nhwgaac" path="res://Escenes/personatge.tscn" id="4_dx0qk"]
 [ext_resource type="PackedScene" uid="uid://dnbykqjqri5ye" path="res://Escenes/tile_map_layer.tscn" id="5_rm3ff"]
+[ext_resource type="PackedScene" uid="uid://bb2gfft5uwinn" path="res://Escenes/cors/mostrar_cors.tscn" id="6_djj6t"]
 [ext_resource type="PackedScene" uid="uid://dcbj3nfffa8h3" path="res://Escenes/champi.tscn" id="7_4pnwr"]
 
 [node name="Joc" type="Node2D" unique_id=1897595839]
@@ -20,11 +21,12 @@ offset_top = 275.0
 offset_right = 458.0
 offset_bottom = 347.0
 
+[node name="cors" parent="Jugador" unique_id=355171088 instance=ExtResource("6_djj6t")]
+
 [node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=345628552]
 position = Vector2(433, 353)
 
 [node name="limits" parent="." unique_id=141493624 instance=ExtResource("1_l3s5o")]
-position = Vector2(-1, 0)
 
 [node name="champi" parent="." unique_id=1481720234 instance=ExtResource("7_4pnwr")]
-position = Vector2(312, 515)
+position = Vector2(414, 521)

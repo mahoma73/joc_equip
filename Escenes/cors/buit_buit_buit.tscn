@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bw5bvr4hk7gs2"]
+
+[ext_resource type="Texture2D" uid="uid://bqs131lfcwoby" path="res://Imatges/Tiles/tile_0046.png" id="1_njmu6"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1629713046]
+
+[node name="cor_buit1" type="Sprite2D" parent="." unique_id=176494869]
+texture_filter = 1
+position = Vector2(1120, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("1_njmu6")
+
+[node name="cor_buit2" type="Sprite2D" parent="." unique_id=1695727803]
+texture_filter = 1
+position = Vector2(1152, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("1_njmu6")
+
+[node name="cor_buit3" type="Sprite2D" parent="." unique_id=431350307]
+texture_filter = 1
+position = Vector2(1184, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("1_njmu6")

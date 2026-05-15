@@ -3,7 +3,7 @@ extends CharacterBody2D
 const velocitat = 100.0
 var direccio = -1
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
-
+var vides: int = 3
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -21,8 +21,7 @@ func anima(velocitat):
 	elif velocitat < 0:
 		animated_sprite_2d.play("volar")
 		animated_sprite_2d.flip_h = true
-func _on_area_entered(area: Area2D) -> void:
-	area.resta_vida()
+
 
 func _on_mort_champi_body_entered(body: Node2D) -> void:
 	queue_free()
@@ -30,4 +29,4 @@ func _on_mort_champi_body_entered(body: Node2D) -> void:
 
 func _on_mort_jugador_body_entered(body: Node2D) -> void:
 	if body.name == "Jugador":
-		body.mor()
+		body.restar_vida()
