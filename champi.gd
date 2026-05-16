@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+var pot_fer_mal: bool = true
 const velocitat = 100.0
 var direccio = -1
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
@@ -26,9 +26,13 @@ func _on_mort_champi_body_entered(body: Node2D) -> void:
 
 func _on_mort_jugador_body_entered(body: Node2D) -> void:
 	if body.name == "Jugador":
+		pot_fer_mal = true
+		print(body.get_node("vides3"))
 		body.get_node("vides3").resta_vida()
 		body.restar_vida()
 		body.get_node("vides3").resta_vida()
 		body.get_node("vides2").resta_vida()
 		body.get_node("vides1").resta_vida()
 		body.get_node("vides0").resta_vida()
+		await get_tree().create_timer(1.0).timeout
+		pot_fer_mal = true
