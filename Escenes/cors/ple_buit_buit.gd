@@ -12,6 +12,4 @@ func _process(delta: float) -> void:
 	
 	
 func resta_vida()->void:
-	vides-=1
-	if vides < 1:
 		hide()

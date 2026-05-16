@@ -1,5 +1,4 @@
 extends CharacterBody2D
-
 const SPEED = 300
 const JUMP_VELOCITY = -400.0
 var vides: int = 3
@@ -18,7 +17,7 @@ func _physics_process(delta: float) -> void:
 
 func restar_vida() -> void:
 	vides -= 1
-	if vides <= 0:
+	if vides < 0:
 		mor()
 
 func mor() -> void:
