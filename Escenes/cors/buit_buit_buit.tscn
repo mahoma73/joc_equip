@@ -6,18 +6,18 @@
 
 [node name="cor_buit1" type="Sprite2D" parent="." unique_id=176494869]
 texture_filter = 1
-position = Vector2(1120, 0)
+position = Vector2(868, 20)
 scale = Vector2(2, 2)
 texture = ExtResource("1_njmu6")
 
 [node name="cor_buit2" type="Sprite2D" parent="." unique_id=1695727803]
 texture_filter = 1
-position = Vector2(1152, 0)
+position = Vector2(900, 20)
 scale = Vector2(2, 2)
 texture = ExtResource("1_njmu6")
 
 [node name="cor_buit3" type="Sprite2D" parent="." unique_id=431350307]
 texture_filter = 1
-position = Vector2(1184, 0)
+position = Vector2(932, 20)
 scale = Vector2(2, 2)
 texture = ExtResource("1_njmu6")

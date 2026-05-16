@@ -2,9 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://b338gk0gnrcw5" path="res://Escenes/limits.tscn" id="1_l3s5o"]
 [ext_resource type="PackedScene" uid="uid://byg751miffq3a" path="res://Escenes/fons_verd.tscn" id="2_yip7x"]
+[ext_resource type="PackedScene" uid="uid://bw5bvr4hk7gs2" path="res://Escenes/cors/buit_buit_buit.tscn" id="3_djj6t"]
+[ext_resource type="PackedScene" uid="uid://bfkgohfw46lm6" path="res://Escenes/cors/ple_ple_ple.tscn" id="3_o1kua"]
+[ext_resource type="PackedScene" uid="uid://dpftp084oc1fx" path="res://Escenes/cors/ple_ple_buit.tscn" id="4_08yld"]
 [ext_resource type="PackedScene" uid="uid://bhwlm2nhwgaac" path="res://Escenes/personatge.tscn" id="4_dx0qk"]
+[ext_resource type="PackedScene" uid="uid://cdxv3tfdyjtd1" path="res://Escenes/cors/ple_buit_buit.tscn" id="5_18jkx"]
 [ext_resource type="PackedScene" uid="uid://dnbykqjqri5ye" path="res://Escenes/tile_map_layer.tscn" id="5_rm3ff"]
-[ext_resource type="PackedScene" uid="uid://bb2gfft5uwinn" path="res://Escenes/cors/mostrar_cors.tscn" id="6_djj6t"]
 [ext_resource type="PackedScene" uid="uid://dcbj3nfffa8h3" path="res://Escenes/champi.tscn" id="7_4pnwr"]
 
 [node name="Joc" type="Node2D" unique_id=1897595839]
@@ -14,14 +17,20 @@
 [node name="Jugador" parent="." unique_id=293533736 instance=ExtResource("4_dx0qk")]
 position = Vector2(-4, 0)
 
+[node name="vides3" parent="Jugador" unique_id=1003917540 instance=ExtResource("3_o1kua")]
+
+[node name="vides2" parent="Jugador" unique_id=251155605 instance=ExtResource("4_08yld")]
+
+[node name="vides1" parent="Jugador" unique_id=62549296 instance=ExtResource("5_18jkx")]
+
+[node name="vides0" parent="Jugador" unique_id=1629713046 instance=ExtResource("3_djj6t")]
+
 [node name="fons_arbres_verd" parent="Jugador" unique_id=489414321 instance=ExtResource("2_yip7x")]
 z_index = -1
-offset_left = -513.0
-offset_top = 275.0
-offset_right = 458.0
-offset_bottom = 347.0
-
-[node name="cors" parent="Jugador" unique_id=355171088 instance=ExtResource("6_djj6t")]
+offset_left = -439.0
+offset_top = 255.0
+offset_right = 532.0
+offset_bottom = 327.0
 
 [node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=345628552]
 position = Vector2(433, 353)

@@ -18,3 +18,4 @@ func actualitzar_vides(vides: int) -> void:
 		cors_instancia.queue_free()
 	cors_instancia = CORS[vides].instantiate()
 	add_child(cors_instancia)
+	cors_instancia.position = Vector2(900, 20)

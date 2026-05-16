@@ -43,6 +43,7 @@ frame_progress = 0.11661633
 [node name="colisio_mort_champi" type="CollisionShape2D" parent="MortChampi" unique_id=947295843]
 position = Vector2(0, -16)
 shape = SubResource("RectangleShape2D_1sc07")
+debug_color = Color(0.94069576, 0.11355204, 0.540967, 0.41960785)
 
 [node name="MortJugador" type="Area2D" parent="." unique_id=1386725385]
 
@@ -53,6 +54,7 @@ shape = SubResource("RectangleShape2D_u2e0w")
 [node name="colisio_mort_jugador2" type="CollisionShape2D" parent="." unique_id=2124956183]
 position = Vector2(0, 2.4375)
 shape = SubResource("RectangleShape2D_u2e0w")
+debug_color = Color(0.7176471, 0.6745098, 0, 0.7411765)
 
 [connection signal="body_entered" from="MortChampi" to="." method="_on_mort_champi_body_entered"]
 [connection signal="body_entered" from="MortJugador" to="." method="_on_mort_jugador_body_entered"]
