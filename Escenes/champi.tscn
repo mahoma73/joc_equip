@@ -29,6 +29,7 @@ size = Vector2(36, 4)
 size = Vector2(40, 26.875)
 
 [node name="champi" type="CharacterBody2D" unique_id=1481720234]
+collision_layer = 2
 script = ExtResource("1_u2e0w")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=71190858]

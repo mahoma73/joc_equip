@@ -21,15 +21,14 @@ func anima(velocitat):
 		animated_sprite_2d.flip_h = true
 
 func _on_mort_champi_body_entered(body: Node2D) -> void:
-	queue_free()
+	if body.name == "Jugador":
+		queue_free()
 
 func _on_mort_jugador_body_entered(body: Node2D) -> void:
 	if body.name == "Jugador":
-		if body.position.y < position.y:
-			queue_free()
-		else:
-			body.restar_vida()
-			body.get_node("vides3").resta_vida()
-			body.get_node("vides2").resta_vida()
-			body.get_node("vides1").resta_vida()
-			body.get_node("vides0").resta_vida()
+		body.get_node("vides3").resta_vida()
+		body.restar_vida()
+		body.get_node("vides3").resta_vida()
+		body.get_node("vides2").resta_vida()
+		body.get_node("vides1").resta_vida()
+		body.get_node("vides0").resta_vida()

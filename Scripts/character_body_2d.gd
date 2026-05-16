@@ -18,7 +18,6 @@ func _physics_process(delta: float) -> void:
 
 func restar_vida() -> void:
 	vides -= 1
-	get_tree().get_first_node_in_group("hud").actualitzar_vides(vides)
 	if vides <= 0:
 		mor()
 
