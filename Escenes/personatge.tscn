@@ -34,4 +34,5 @@ position = Vector2(191, 492)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_grld7")
 animation = &"animacio_personatge"
+autoplay = "animacio_personatge"
 frame_progress = 0.48181278
