@@ -1,7 +1,17 @@
 [gd_scene format=3 uid="uid://ccxb1ntgye85f"]
 
+[ext_resource type="PackedScene" uid="uid://cge71m7d7q7k1" path="res://Escenes/fons_marro.tscn" id="1_86xyr"]
+[ext_resource type="PackedScene" uid="uid://3jkincdw523h" path="res://Escenes/tile_map_layer_2.tscn" id="1_mro4d"]
 [ext_resource type="PackedScene" uid="uid://bhwlm2nhwgaac" path="res://Escenes/personatge.tscn" id="1_tx8qw"]
+[ext_resource type="PackedScene" uid="uid://b338gk0gnrcw5" path="res://Escenes/limits.tscn" id="2_86xyr"]
 
 [node name="Nivell_2" type="Node2D" unique_id=2024647345]
 
+[node name="fons_arbres_marro" parent="." unique_id=1247358892 instance=ExtResource("1_86xyr")]
+
+[node name="TileMapLayer" parent="." unique_id=1479219733 instance=ExtResource("1_mro4d")]
+
+[node name="limits" parent="." unique_id=141493624 instance=ExtResource("2_86xyr")]
+
 [node name="Jugador" parent="." unique_id=293533736 instance=ExtResource("1_tx8qw")]
+position = Vector2(-5, -91)
