@@ -2,27 +2,27 @@ extends CharacterBody2D
 var pot_fer_mal: bool = true
 const velocitat = 100.0
 var direccio = -1
-@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var animated_sprite_2d = $AnimatedSprite2D
 
-func _physics_process(delta: float) -> void:
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-	velocity.x = direccio * velocitat
+func _physics_process(_float) -> void:
+	moviment()
 	move_and_slide()
+	anima(velocity.x)
+
+func moviment() -> void:
+	velocity.x = direccio * velocitat
+	velocity.y = 0
 	if is_on_wall():
 		direccio *= -1
 
 func anima(velocitat):
 	if velocitat > 0:
-		animated_sprite_2d.play("animacio_champi")
-		animated_sprite_2d.flip_h = false
-	elif velocitat < 0:
-		animated_sprite_2d.play("animacio_champi")
+		animated_sprite_2d.play("animacio_volar")
 		animated_sprite_2d.flip_h = true
 
-func _on_mort_champi_body_entered(body: Node2D) -> void:
-	if body.name == "Jugador":
-		queue_free()
+	elif velocitat < 0:
+		animated_sprite_2d.play("animacio_volar")
+		animated_sprite_2d.flip_h = false
 
 func _on_mort_jugador_body_entered(body: Node2D) -> void:
 	if body.name == "Jugador" and pot_fer_mal:
