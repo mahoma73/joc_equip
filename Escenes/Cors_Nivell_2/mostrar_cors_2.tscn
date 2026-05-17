@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://d20dl2xwhimdd"]
+
+[ext_resource type="Script" uid="uid://di8ujehglrjvv" path="res://Escenes/cors/mostrar_cors.gd" id="1_q3fvn"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=355171088]
+script = ExtResource("1_q3fvn")

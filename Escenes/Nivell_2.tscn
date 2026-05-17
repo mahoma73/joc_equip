@@ -2,8 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://cge71m7d7q7k1" path="res://Escenes/fons_marro.tscn" id="1_86xyr"]
 [ext_resource type="PackedScene" uid="uid://dhbuxsrs7a1ql" path="res://Escenes/tile_map_layer_2.tscn" id="1_mro4d"]
-[ext_resource type="PackedScene" uid="uid://bhwlm2nhwgaac" path="res://Escenes/personatge.tscn" id="1_tx8qw"]
 [ext_resource type="PackedScene" uid="uid://b338gk0gnrcw5" path="res://Escenes/limits.tscn" id="2_86xyr"]
+[ext_resource type="PackedScene" uid="uid://bfegg0isxhoq" path="res://Escenes/champi_2.tscn" id="4_03n4g"]
+[ext_resource type="PackedScene" uid="uid://dkd2ihuh6e0iu" path="res://Escenes/personatge_2.tscn" id="5_fxjqm"]
+[ext_resource type="PackedScene" uid="uid://ck4iigdl0c3ww" path="res://Escenes/Cors_Nivell_2/buit_buit.tscn" id="5_v1o3y"]
+[ext_resource type="PackedScene" uid="uid://b3avfngblm5hk" path="res://Escenes/Cors_Nivell_2/ple_buit.tscn" id="6_03n4g"]
+[ext_resource type="PackedScene" uid="uid://dpebrmkrqqvph" path="res://Escenes/Cors_Nivell_2/ple_ple.tscn" id="7_wlk08"]
 
 [node name="Nivell_2" type="Node2D" unique_id=2024647345]
 
@@ -14,8 +18,14 @@ tile_map_data = PackedByteArray("AAAAAAkAAAACAAMAAAABAAkAAAACAAMAAAACAAkAAAACAAM
 
 [node name="limits" parent="." unique_id=141493624 instance=ExtResource("2_86xyr")]
 
-[node name="Jugador" parent="." unique_id=293533736 instance=ExtResource("1_tx8qw")]
-position = Vector2(-5, -91)
+[node name="champi" parent="." unique_id=1481720234 instance=ExtResource("4_03n4g")]
+position = Vector2(471, 452)
 
-[node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=465880248]
-position = Vector2(579, 416)
+[node name="Jugador" parent="." unique_id=293533736 instance=ExtResource("5_fxjqm")]
+position = Vector2(56, -74)
+
+[node name="Vides_2" parent="Jugador" unique_id=921540436 instance=ExtResource("7_wlk08")]
+
+[node name="Vides_1" parent="Jugador" unique_id=574007957 instance=ExtResource("6_03n4g")]
+
+[node name="Vides_0" parent="Jugador" unique_id=871663216 instance=ExtResource("5_v1o3y")]

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dpebrmkrqqvph"]
+
+[ext_resource type="Script" uid="uid://bepbt5oldb6ig" path="res://Escenes/Cors_Nivell_2/Ple_ple.gd" id="1_q3ir5"]
+[ext_resource type="Texture2D" uid="uid://g6vb42a61nkw" path="res://Imatges/Tiles/tile_0044 - còpia.png" id="2_vh14m"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=921540436]
+script = ExtResource("1_q3ir5")
+
+[node name="cor_ple1" type="Sprite2D" parent="." unique_id=27946006]
+texture_filter = 1
+position = Vector2(868, 20)
+scale = Vector2(2, 2)
+texture = ExtResource("2_vh14m")
+
+[node name="cor_ple2" type="Sprite2D" parent="." unique_id=2066068675]
+texture_filter = 1
+position = Vector2(900, 20)
+scale = Vector2(2, 2)
+texture = ExtResource("2_vh14m")
