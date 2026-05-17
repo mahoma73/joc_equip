@@ -9,7 +9,7 @@ texture_filter = 1
 texture_repeat = 1
 offset_left = -1974.0
 offset_top = 215.0
-offset_right = 1113.6667
+offset_right = 3191.667
 offset_bottom = 283.6667
 scale = Vector2(3, 3)
 texture = ExtResource("1_whm2e")
@@ -19,9 +19,9 @@ stretch_mode = 1
 [node name="fons_cel_marro" type="TextureRect" parent="." unique_id=1610739521]
 layout_mode = 0
 offset_left = -1.333323
-offset_top = -84.666664
-offset_right = 3084.0002
-offset_bottom = 4.6666794
+offset_top = -545.3334
+offset_right = 5167.0
+offset_bottom = 4.666626
 texture = ExtResource("2_vccw5")
 
 [node name="fons_terra_marro" type="TextureRect" parent="." unique_id=350349069]
@@ -29,6 +29,6 @@ texture_filter = 1
 layout_mode = 0
 offset_left = 2.3333282
 offset_top = 68.33333
-offset_right = 3085.0
-offset_bottom = 698.3333
+offset_right = 5168.3335
+offset_bottom = 1248.0001
 texture = ExtResource("3_8nxf4")
