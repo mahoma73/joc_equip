@@ -27,9 +27,9 @@ position = Vector2(-4, 0)
 
 [node name="fons_arbres_verd" parent="Jugador" unique_id=489414321 instance=ExtResource("2_yip7x")]
 z_index = -1
-offset_left = -439.0
+offset_left = -446.0
 offset_top = 255.0
-offset_right = 532.0
+offset_right = 1683.6667
 offset_bottom = 327.0
 
 [node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=345628552]
