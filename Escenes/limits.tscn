@@ -6,6 +6,9 @@ normal = Vector2(1, 0)
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_n8etv"]
 normal = Vector2(0, 1)
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yuhge"]
+normal = Vector2(-0.9999936, 0.003581484)
+
 [node name="limits" type="StaticBody2D" unique_id=141493624]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=919745005]
@@ -13,3 +16,7 @@ shape = SubResource("WorldBoundaryShape2D_q374d")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=563593752]
 shape = SubResource("WorldBoundaryShape2D_n8etv")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1528051297]
+position = Vector2(7300, 302.804)
+shape = SubResource("WorldBoundaryShape2D_yuhge")

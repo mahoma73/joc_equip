@@ -1,18 +1,75 @@
 [gd_scene format=3 uid="uid://jjcsvtcksc6w"]
 
 [ext_resource type="PackedScene" uid="uid://b338gk0gnrcw5" path="res://Escenes/limits.tscn" id="1_l3s5o"]
+[ext_resource type="Script" uid="uid://bw6gsguhbki5q" path="res://Escenes/victoria.gd" id="2_1t78s"]
 [ext_resource type="PackedScene" uid="uid://byg751miffq3a" path="res://Escenes/fons_verd.tscn" id="2_yip7x"]
 [ext_resource type="PackedScene" uid="uid://bw5bvr4hk7gs2" path="res://Escenes/cors/buit_buit_buit.tscn" id="3_djj6t"]
 [ext_resource type="PackedScene" uid="uid://bfkgohfw46lm6" path="res://Escenes/cors/ple_ple_ple.tscn" id="3_o1kua"]
+[ext_resource type="Script" uid="uid://ccm53a3i0ujml" path="res://Escenes/coins.gd" id="3_yntmh"]
 [ext_resource type="PackedScene" uid="uid://dpftp084oc1fx" path="res://Escenes/cors/ple_ple_buit.tscn" id="4_08yld"]
 [ext_resource type="PackedScene" uid="uid://bhwlm2nhwgaac" path="res://Escenes/personatge.tscn" id="4_dx0qk"]
 [ext_resource type="PackedScene" uid="uid://cdxv3tfdyjtd1" path="res://Escenes/cors/ple_buit_buit.tscn" id="5_18jkx"]
 [ext_resource type="PackedScene" uid="uid://dnbykqjqri5ye" path="res://Escenes/tile_map_layer.tscn" id="5_rm3ff"]
 [ext_resource type="PackedScene" uid="uid://dcbj3nfffa8h3" path="res://Escenes/champi.tscn" id="7_4pnwr"]
+[ext_resource type="Texture2D" uid="uid://bxp1d0fl1luju" path="res://Imatges/Tiles/tile_0151.png" id="11_18jkx"]
+[ext_resource type="Script" uid="uid://fihtk84ng1cn" path="res://MonedaScript.gd" id="11_yntmh"]
+[ext_resource type="Script" uid="uid://cf2xualbkikf7" path="res://Escenes/clau.gd" id="14_dg7eb"]
+[ext_resource type="Texture2D" uid="uid://cxrpfatem6psc" path="res://Imatges/Tiles/tile_0027.png" id="15_rrt2d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_18jkx"]
+size = Vector2(44, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yntmh"]
+size = Vector2(59, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lcl8s"]
+size = Vector2(48, 45.000004)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_alref"]
+size = Vector2(49.978516, 44.252136)
 
 [node name="Joc" type="Node2D" unique_id=1897595839]
 
 [node name="TileMapLayer" parent="." unique_id=1479219733 instance=ExtResource("5_rm3ff")]
+
+[node name="Victoria" type="Label" parent="." unique_id=1125836389]
+offset_left = 6984.772
+offset_top = 142.62851
+offset_right = 7878.772
+offset_bottom = 215.62851
+theme_override_colors/font_color = Color(1, 0.98333335, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Felicitats! Has aconseguit la clau que et permetrà passar al següent nivell. 
+Apreta ENTER per continuar"
+script = ExtResource("2_1t78s")
+
+[node name="Label" type="Label" parent="Victoria" unique_id=1976048995]
+layout_mode = 0
+offset_left = 30.427246
+offset_top = 123.771484
+offset_right = 70.427246
+offset_bottom = 146.77148
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 25
+
+[node name="Label" type="Label" parent="." unique_id=1442824883]
+offset_left = 32.0
+offset_top = 159.8252
+offset_right = 805.0
+offset_bottom = 255.0
+theme_override_colors/font_shadow_color = Color(0.15686275, 0, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "Benvingut, viatger! Utilitza les fletxes per moure't. 
+Compte amb els monstres per més adorables que siguin!"
+
+[node name="Label2" type="Label" parent="." unique_id=1470574724]
+offset_left = 1825.7036
+offset_top = 122.39075
+offset_right = 2203.7036
+offset_bottom = 197.0
+theme_override_colors/font_shadow_color = Color(0.15686275, 0, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "Intenta agafar tantes monedes com puguis!"
 
 [node name="Jugador" parent="." unique_id=293533736 instance=ExtResource("4_dx0qk")]
 position = Vector2(-4, 0)
@@ -25,6 +82,16 @@ offset_bottom = 162.70627
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 
+[node name="Coins" type="Label" parent="Jugador" unique_id=1466387531]
+offset_left = -122.53461
+offset_top = 41.73535
+offset_right = 162.0
+offset_bottom = 106.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Monedes: 0"
+script = ExtResource("3_yntmh")
+
 [node name="vides3" parent="Jugador" unique_id=1003917540 instance=ExtResource("3_o1kua")]
 
 [node name="vides2" parent="Jugador" unique_id=251155605 instance=ExtResource("4_08yld")]
@@ -35,33 +102,80 @@ theme_override_font_sizes/font_size = 30
 
 [node name="fons_arbres_verd" parent="Jugador" unique_id=489414321 instance=ExtResource("2_yip7x")]
 z_index = -1
-offset_left = -409.0
-offset_top = 276.0
-offset_right = 3333.6667
-offset_bottom = 348.0
+offset_left = -412.00003
+offset_top = 264.0
+offset_right = 3330.6667
+offset_bottom = 336.0
 
 [node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=345628552]
-position = Vector2(433, 353)
+position = Vector2(432, 348)
 
 [node name="limits" parent="." unique_id=141493624 instance=ExtResource("1_l3s5o")]
 
 [node name="champi" parent="." unique_id=1481720234 instance=ExtResource("7_4pnwr")]
 position = Vector2(414, 521)
 
-[node name="Label" type="Label" parent="." unique_id=1442824883]
-offset_left = 32.0
-offset_top = 159.8252
-offset_right = 805.0
-offset_bottom = 255.0
-theme_override_colors/font_shadow_color = Color(0.15686275, 0, 1, 1)
-theme_override_font_sizes/font_size = 20
-text = "Welcome, traveller! Use the arrows to move. Beware of the Champis!"
+[node name="Moneda 1" type="Area2D" parent="." unique_id=2079953297]
+position = Vector2(1654.9832, 161.72278)
+script = ExtResource("11_yntmh")
 
-[node name="Label2" type="Label" parent="." unique_id=1470574724]
-offset_left = 1825.7036
-offset_top = 122.39075
-offset_right = 2149.0
-offset_bottom = 197.0
-theme_override_colors/font_shadow_color = Color(0.15686275, 0, 1, 1)
-theme_override_font_sizes/font_size = 20
-text = "Try to collect as many coins as you can!"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda 1" unique_id=63953084]
+position = Vector2(89.016846, 13.277222)
+shape = SubResource("RectangleShape2D_18jkx")
+
+[node name="Sprite2D" type="Sprite2D" parent="Moneda 1" unique_id=1116416007]
+texture_filter = 1
+position = Vector2(89.01685, 12.277221)
+scale = Vector2(3.612047, 3.6265123)
+texture = ExtResource("11_18jkx")
+
+[node name="Moneda 2" type="Area2D" parent="." unique_id=507870965]
+position = Vector2(3542.476, 442.23895)
+script = ExtResource("11_yntmh")
+
+[node name="Sprite2D" type="Sprite2D" parent="Moneda 2" unique_id=1656296031]
+texture_filter = 1
+position = Vector2(22.52395, 2.2610435)
+scale = Vector2(4.66666, 4.277778)
+texture = ExtResource("11_18jkx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda 2" unique_id=288770347]
+position = Vector2(22.023926, 2.7610474)
+shape = SubResource("RectangleShape2D_yntmh")
+
+[node name="Moneda 3" type="Area2D" parent="." unique_id=697045968]
+position = Vector2(5793.328, 782.20245)
+script = ExtResource("11_yntmh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda 3" unique_id=1569479562]
+position = Vector2(15.671875, -9.702454)
+shape = SubResource("RectangleShape2D_lcl8s")
+
+[node name="Sprite2D" type="Sprite2D" parent="Moneda 3" unique_id=2063396133]
+texture_filter = 1
+position = Vector2(15.67201, -9.952473)
+scale = Vector2(3.666652, 3.75)
+texture = ExtResource("11_18jkx")
+
+[node name="Clau" type="Area2D" parent="." unique_id=484497036]
+position = Vector2(7014.0215, 378.74786)
+script = ExtResource("14_dg7eb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clau" unique_id=1626771048]
+position = Vector2(14.989258, 12.126068)
+shape = SubResource("RectangleShape2D_alref")
+
+[node name="Sprite2D" type="Sprite2D" parent="Clau" unique_id=1293199092]
+texture_filter = 1
+position = Vector2(15.989258, 13.126068)
+scale = Vector2(2.7765841, 2.458452)
+texture = ExtResource("15_rrt2d")
+
+[connection signal="body_entered" from="Moneda 1" to="Jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="Moneda 1" to="Moneda 1" method="_on_body_entered"]
+[connection signal="body_entered" from="Moneda 2" to="Jugador" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Moneda 2" to="Moneda 2" method="_on_body_entered"]
+[connection signal="body_entered" from="Moneda 3" to="Jugador" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Moneda 3" to="Moneda 3" method="_on_body_entered"]
+[connection signal="body_entered" from="Clau" to="Clau" method="_on_body_entered"]
+[connection signal="body_entered" from="Clau" to="Victoria" method="_on_clau_body_entered"]
