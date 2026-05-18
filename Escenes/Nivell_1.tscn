@@ -112,6 +112,7 @@ offset_bottom = 305.0
 position = Vector2(432, 348)
 
 [node name="limits" parent="." unique_id=141493624 instance=ExtResource("1_l3s5o")]
+position = Vector2(1, 0)
 
 [node name="champi" parent="." unique_id=1481720234 instance=ExtResource("7_4pnwr")]
 position = Vector2(417, 403)
