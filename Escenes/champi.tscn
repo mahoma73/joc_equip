@@ -26,7 +26,7 @@ animations = [{
 size = Vector2(36, 4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u2e0w"]
-size = Vector2(40, 26.875)
+size = Vector2(47, 26.875)
 
 [node name="champi" type="CharacterBody2D" unique_id=1481720234]
 collision_layer = 2
@@ -50,7 +50,7 @@ debug_color = Color(0.94069576, 0.11355204, 0.540967, 0.41960785)
 [node name="MortJugador" type="Area2D" parent="." unique_id=1386725385]
 
 [node name="colisio_mort_jugador" type="CollisionShape2D" parent="MortJugador" unique_id=1091942488]
-position = Vector2(0, 2.4375)
+position = Vector2(-0.5, 2.4375)
 shape = SubResource("RectangleShape2D_u2e0w")
 
 [node name="colisio_mort_jugador2" type="CollisionShape2D" parent="." unique_id=2124956183]
