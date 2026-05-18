@@ -44,15 +44,6 @@ text = "Felicitats! Has aconseguit la clau que et permetrà passar al següent n
 Apreta ENTER per continuar"
 script = ExtResource("2_1t78s")
 
-[node name="Label" type="Label" parent="Victoria" unique_id=1976048995]
-layout_mode = 0
-offset_left = 30.427246
-offset_top = 123.771484
-offset_right = 70.427246
-offset_bottom = 146.77148
-theme_override_colors/font_color = Color(1, 1, 0, 1)
-theme_override_font_sizes/font_size = 25
-
 [node name="Label" type="Label" parent="." unique_id=1442824883]
 offset_left = 32.0
 offset_top = 159.8252
