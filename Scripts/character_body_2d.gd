@@ -2,8 +2,14 @@ extends CharacterBody2D
 const SPEED = 300
 const JUMP_VELOCITY = -400.0
 var vides: int = 3
+var playing : bool = true
 
 func _physics_process(delta: float) -> void:
+	if playing == false:
+		velocity.x = 0
+		if Input.is_action_just_pressed("Enter"):
+			get_tree().reload_current_scene()
+		return
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	if Input.is_action_pressed("ui_accept") and is_on_floor():
@@ -17,8 +23,9 @@ func _physics_process(delta: float) -> void:
 
 func restar_vida() -> void:
 	vides -= 1
-	if vides < 0:
+	if vides == 0:
 		mor()
 
 func mor() -> void:
-	queue_free()
+	playing = false
+	$GO.text = "GAME OVER, press ENTER to try again"

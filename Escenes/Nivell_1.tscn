@@ -17,6 +17,14 @@
 [node name="Jugador" parent="." unique_id=293533736 instance=ExtResource("4_dx0qk")]
 position = Vector2(-4, 0)
 
+[node name="GO" type="Label" parent="Jugador" unique_id=342981660]
+offset_left = 218.9338
+offset_top = 70.545746
+offset_right = 609.1042
+offset_bottom = 162.70627
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+
 [node name="vides3" parent="Jugador" unique_id=1003917540 instance=ExtResource("3_o1kua")]
 
 [node name="vides2" parent="Jugador" unique_id=251155605 instance=ExtResource("4_08yld")]
@@ -27,10 +35,10 @@ position = Vector2(-4, 0)
 
 [node name="fons_arbres_verd" parent="Jugador" unique_id=489414321 instance=ExtResource("2_yip7x")]
 z_index = -1
-offset_left = -446.0
-offset_top = 255.0
-offset_right = 3296.6667
-offset_bottom = 327.0
+offset_left = -409.0
+offset_top = 276.0
+offset_right = 3333.6667
+offset_bottom = 348.0
 
 [node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=345628552]
 position = Vector2(433, 353)
@@ -39,3 +47,21 @@ position = Vector2(433, 353)
 
 [node name="champi" parent="." unique_id=1481720234 instance=ExtResource("7_4pnwr")]
 position = Vector2(414, 521)
+
+[node name="Label" type="Label" parent="." unique_id=1442824883]
+offset_left = 32.0
+offset_top = 159.8252
+offset_right = 805.0
+offset_bottom = 255.0
+theme_override_colors/font_shadow_color = Color(0.15686275, 0, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "Welcome, traveller! Use the arrows to move. Beware of the Champis!"
+
+[node name="Label2" type="Label" parent="." unique_id=1470574724]
+offset_left = 1825.7036
+offset_top = 122.39075
+offset_right = 2149.0
+offset_bottom = 197.0
+theme_override_colors/font_shadow_color = Color(0.15686275, 0, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "Try to collect as many coins as you can!"
