@@ -1,19 +1,19 @@
 [gd_scene format=4 uid="uid://jjcsvtcksc6w"]
 
 [ext_resource type="PackedScene" uid="uid://b338gk0gnrcw5" path="res://Escenes/limits.tscn" id="1_l3s5o"]
-[ext_resource type="Script" path="res://Escenes/victoria.gd" id="2_1t78s"]
+[ext_resource type="Script" uid="uid://bw6gsguhbki5q" path="res://Escenes/victoria.gd" id="2_1t78s"]
 [ext_resource type="PackedScene" uid="uid://byg751miffq3a" path="res://Escenes/fons_verd.tscn" id="2_yip7x"]
 [ext_resource type="PackedScene" uid="uid://bw5bvr4hk7gs2" path="res://Escenes/cors/buit_buit_buit.tscn" id="3_djj6t"]
 [ext_resource type="PackedScene" uid="uid://bfkgohfw46lm6" path="res://Escenes/cors/ple_ple_ple.tscn" id="3_o1kua"]
-[ext_resource type="Script" path="res://Escenes/coins.gd" id="3_yntmh"]
+[ext_resource type="Script" uid="uid://ccm53a3i0ujml" path="res://Escenes/coins.gd" id="3_yntmh"]
 [ext_resource type="PackedScene" uid="uid://dpftp084oc1fx" path="res://Escenes/cors/ple_ple_buit.tscn" id="4_08yld"]
 [ext_resource type="PackedScene" uid="uid://bhwlm2nhwgaac" path="res://Escenes/personatge.tscn" id="4_dx0qk"]
 [ext_resource type="PackedScene" uid="uid://cdxv3tfdyjtd1" path="res://Escenes/cors/ple_buit_buit.tscn" id="5_18jkx"]
 [ext_resource type="PackedScene" uid="uid://dnbykqjqri5ye" path="res://Escenes/tile_map_layer.tscn" id="5_rm3ff"]
 [ext_resource type="PackedScene" uid="uid://dcbj3nfffa8h3" path="res://Escenes/champi.tscn" id="7_4pnwr"]
 [ext_resource type="Texture2D" uid="uid://bxp1d0fl1luju" path="res://Imatges/Tiles/tile_0151.png" id="11_18jkx"]
-[ext_resource type="Script" path="res://MonedaScript.gd" id="11_yntmh"]
-[ext_resource type="Script" path="res://Escenes/clau.gd" id="14_dg7eb"]
+[ext_resource type="Script" uid="uid://fihtk84ng1cn" path="res://MonedaScript.gd" id="11_yntmh"]
+[ext_resource type="Script" uid="uid://cf2xualbkikf7" path="res://Escenes/clau.gd" id="14_dg7eb"]
 [ext_resource type="Texture2D" uid="uid://cxrpfatem6psc" path="res://Imatges/Tiles/tile_0027.png" id="15_rrt2d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_18jkx"]
@@ -73,7 +73,7 @@ theme_override_font_sizes/font_size = 20
 text = "Intenta agafar tantes monedes com puguis!"
 
 [node name="Jugador" parent="." unique_id=293533736 instance=ExtResource("4_dx0qk")]
-position = Vector2(-4, 0)
+position = Vector2(-4, -4)
 
 [node name="GO" type="Label" parent="Jugador" unique_id=342981660]
 offset_left = 218.9338
@@ -103,10 +103,10 @@ script = ExtResource("3_yntmh")
 
 [node name="fons_arbres_verd" parent="Jugador" unique_id=489414321 instance=ExtResource("2_yip7x")]
 z_index = -1
-offset_left = -412.00003
-offset_top = 264.0
-offset_right = 3330.6667
-offset_bottom = 336.0
+offset_left = -413.0
+offset_top = 233.0
+offset_right = 3329.6667
+offset_bottom = 305.0
 
 [node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=345628552]
 position = Vector2(432, 348)
@@ -114,10 +114,10 @@ position = Vector2(432, 348)
 [node name="limits" parent="." unique_id=141493624 instance=ExtResource("1_l3s5o")]
 
 [node name="champi" parent="." unique_id=1481720234 instance=ExtResource("7_4pnwr")]
-position = Vector2(414, 521)
+position = Vector2(417, 403)
 
 [node name="Moneda 1" type="Area2D" parent="." unique_id=2079953297]
-position = Vector2(1654.9832, 161.72278)
+position = Vector2(1632, 60)
 script = ExtResource("11_yntmh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda 1" unique_id=63953084]
@@ -131,44 +131,44 @@ scale = Vector2(3.612047, 3.6265123)
 texture = ExtResource("11_18jkx")
 
 [node name="Moneda 2" type="Area2D" parent="." unique_id=507870965]
-position = Vector2(3542.476, 442.23895)
+position = Vector2(3423, 338)
 script = ExtResource("11_yntmh")
 
 [node name="Sprite2D" type="Sprite2D" parent="Moneda 2" unique_id=1656296031]
 texture_filter = 1
-position = Vector2(22.52395, 2.2610435)
+position = Vector2(2.0000267, -1.0000076)
 scale = Vector2(4.66666, 4.277778)
 texture = ExtResource("11_18jkx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda 2" unique_id=288770347]
-position = Vector2(22.023926, 2.7610474)
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_yntmh")
 
 [node name="Moneda 3" type="Area2D" parent="." unique_id=697045968]
-position = Vector2(5793.328, 782.20245)
+position = Vector2(5828, 675)
 script = ExtResource("11_yntmh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda 3" unique_id=1569479562]
-position = Vector2(15.671875, -9.702454)
+position = Vector2(3, -2)
 shape = SubResource("RectangleShape2D_lcl8s")
 
 [node name="Sprite2D" type="Sprite2D" parent="Moneda 3" unique_id=2063396133]
 texture_filter = 1
-position = Vector2(15.67201, -9.952473)
+position = Vector2(1.0001335, -1.0000153)
 scale = Vector2(3.666652, 3.75)
 texture = ExtResource("11_18jkx")
 
 [node name="Clau" type="Area2D" parent="." unique_id=484497036]
-position = Vector2(7014.0215, 378.74786)
+position = Vector2(7024, 295)
 script = ExtResource("14_dg7eb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clau" unique_id=1626771048]
-position = Vector2(14.989258, 12.126068)
+position = Vector2(4, 1)
 shape = SubResource("RectangleShape2D_alref")
 
 [node name="Sprite2D" type="Sprite2D" parent="Clau" unique_id=1293199092]
 texture_filter = 1
-position = Vector2(15.989258, 13.126068)
+position = Vector2(2, 0)
 scale = Vector2(2.7765841, 2.458452)
 texture = ExtResource("15_rrt2d")
 
