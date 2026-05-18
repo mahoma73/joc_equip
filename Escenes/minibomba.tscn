@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://3h63i78i4xrx"]
+
+[ext_resource type="Texture2D" uid="uid://bv1kxwckx8uh1" path="res://Imatges/Tiles/Characters/tile_0015.png" id="1_erwb5"]
+[ext_resource type="Texture2D" uid="uid://dyjr5b5w2m428" path="res://Imatges/Tiles/Characters/tile_0016.png" id="2_6v70c"]
+[ext_resource type="Texture2D" uid="uid://ie1wpgk8fsb4" path="res://Imatges/Tiles/Characters/tile_0017.png" id="3_xkefg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tuds2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_erwb5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6v70c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xkefg")
+}],
+"loop": true,
+"name": &"minibomba_animacio",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_erwb5"]
+size = Vector2(14, 9)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6v70c"]
+radius = 2.6874194
+
+[node name="minibomba" type="CharacterBody2D" unique_id=722177129]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1847404197]
+texture_filter = 1
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_tuds2")
+animation = &"minibomba_animacio"
+frame_progress = 0.36925876
+
+[node name="colisio_rectangle" type="CollisionShape2D" parent="." unique_id=1313555974]
+position = Vector2(0, 22.5)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_erwb5")
+
+[node name="colisio_cercle" type="CollisionShape2D" parent="." unique_id=1203480845]
+position = Vector2(0, -1)
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_6v70c")
