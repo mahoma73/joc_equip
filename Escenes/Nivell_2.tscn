@@ -8,12 +8,14 @@
 [ext_resource type="PackedScene" uid="uid://ck4iigdl0c3ww" path="res://Escenes/Cors_Nivell_2/buit_buit.tscn" id="5_v1o3y"]
 [ext_resource type="PackedScene" uid="uid://b3avfngblm5hk" path="res://Escenes/Cors_Nivell_2/ple_buit.tscn" id="6_03n4g"]
 [ext_resource type="PackedScene" uid="uid://dpebrmkrqqvph" path="res://Escenes/Cors_Nivell_2/ple_ple.tscn" id="7_wlk08"]
-[ext_resource type="Script" uid="uid://ccm53a3i0ujml" path="res://Escenes/coins.gd" id="9_wlk08"]
 [ext_resource type="Script" uid="uid://bcu1cdu1oq76w" path="res://Escenes/Moneda_Script_2.gd" id="10_q8eyt"]
 [ext_resource type="Texture2D" uid="uid://bxp1d0fl1luju" path="res://Imatges/Tiles/tile_0151.png" id="10_ygxba"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q8eyt"]
 size = Vector2(56, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygxba"]
+size = Vector2(33.000244, 29.909668)
 
 [node name="Nivell_2" type="Node2D" unique_id=2024647345]
 
@@ -41,6 +43,13 @@ T'has passat el nivell 2!
 [node name="Jugador" parent="." unique_id=293533736 instance=ExtResource("5_fxjqm")]
 position = Vector2(56, -74)
 
+[node name="Coins" type="Label" parent="Jugador" unique_id=1245037509]
+offset_left = -41.0
+offset_top = 90.0
+offset_right = 88.0
+offset_bottom = 118.0
+text = "Monedes:0"
+
 [node name="Vides_2" parent="Jugador" unique_id=921540436 instance=ExtResource("7_wlk08")]
 
 [node name="Vides_1" parent="Jugador" unique_id=574007957 instance=ExtResource("6_03n4g")]
@@ -49,15 +58,6 @@ position = Vector2(56, -74)
 
 [node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=506372405]
 position = Vector2(522, 400)
-
-[node name="Monedes" type="Label" parent="Jugador" unique_id=1327897586]
-offset_left = 874.0
-offset_top = 76.0
-offset_right = 1092.0
-offset_bottom = 208.0
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-text = "Monedes: 0"
-script = ExtResource("9_wlk08")
 
 [node name="Moneda_1" type="Area2D" parent="." unique_id=2146259382]
 position = Vector2(1203.7273, 313.2727)
@@ -71,3 +71,23 @@ shape = SubResource("RectangleShape2D_q8eyt")
 position = Vector2(11.272671, -7.272704)
 scale = Vector2(3.2651465, 2.8762612)
 texture = ExtResource("10_ygxba")
+
+[node name="Moneda_2" type="Area2D" parent="." unique_id=582357847]
+position = Vector2(1051.803, 292.97577)
+script = ExtResource("10_q8eyt")
+
+[node name="Sprite2D" type="Sprite2D" parent="Moneda_2" unique_id=363236827]
+texture_filter = 1
+position = Vector2(23.768555, 35.74185)
+scale = Vector2(2.7871115, 2.555555)
+texture = ExtResource("10_ygxba")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda_2" unique_id=1632701911]
+position = Vector2(23.768555, 35.74182)
+shape = SubResource("RectangleShape2D_ygxba")
+disabled = true
+
+[connection signal="body_entered" from="Moneda_1" to="Jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="Moneda_1" to="Moneda_1" method="_on_body_entered"]
+[connection signal="body_entered" from="Moneda_2" to="Jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="Moneda_2" to="Moneda_2" method="_on_body_entered"]
