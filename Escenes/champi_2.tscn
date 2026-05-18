@@ -54,7 +54,7 @@ position = Vector2(0, 2.4375)
 shape = SubResource("RectangleShape2D_u2e0w")
 
 [node name="colisio_mort_jugador2" type="CollisionShape2D" parent="." unique_id=2124956183]
-position = Vector2(0, 2.4375)
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_u2e0w")
 debug_color = Color(0.7176471, 0.6745098, 0, 0.7411765)
 
