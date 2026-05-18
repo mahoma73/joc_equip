@@ -26,12 +26,12 @@ position = Vector2(6, -1)
 script = ExtResource("1_ttrkr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1783962689]
-position = Vector2(191, 495)
+position = Vector2(205, 392)
 shape = SubResource("RectangleShape2D_otv2m")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1880301851]
 texture_filter = 1
-position = Vector2(191, 492)
+position = Vector2(202, 389)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_grld7")
 animation = &"animacio_personatge"
