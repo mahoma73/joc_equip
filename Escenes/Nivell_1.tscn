@@ -103,19 +103,34 @@ script = ExtResource("3_yntmh")
 
 [node name="fons_arbres_verd" parent="Jugador" unique_id=489414321 instance=ExtResource("2_yip7x")]
 z_index = -1
-offset_left = -413.0
-offset_top = 233.0
-offset_right = 3329.6667
-offset_bottom = 305.0
+offset_left = -409.0
+offset_top = 218.0
+offset_right = 3333.6667
+offset_bottom = 290.0
 
 [node name="Camera2D" type="Camera2D" parent="Jugador" unique_id=345628552]
-position = Vector2(432, 348)
+position = Vector2(391, 328)
 
 [node name="limits" parent="." unique_id=141493624 instance=ExtResource("1_l3s5o")]
-position = Vector2(1, 0)
+position = Vector2(72, 0)
 
 [node name="champi" parent="." unique_id=1481720234 instance=ExtResource("7_4pnwr")]
 position = Vector2(417, 403)
+
+[node name="champi2" parent="." unique_id=248236254 instance=ExtResource("7_4pnwr")]
+position = Vector2(1509, 457)
+
+[node name="champi3" parent="." unique_id=459581301 instance=ExtResource("7_4pnwr")]
+position = Vector2(1424, 187)
+
+[node name="champi4" parent="." unique_id=2106895083 instance=ExtResource("7_4pnwr")]
+position = Vector2(2604, 431)
+
+[node name="champi5" parent="." unique_id=462929132 instance=ExtResource("7_4pnwr")]
+position = Vector2(5278, 997)
+
+[node name="champi6" parent="." unique_id=670358178 instance=ExtResource("7_4pnwr")]
+position = Vector2(6087, 781)
 
 [node name="Moneda 1" type="Area2D" parent="." unique_id=2079953297]
 position = Vector2(1632, 60)
@@ -132,17 +147,17 @@ scale = Vector2(3.612047, 3.6265123)
 texture = ExtResource("11_18jkx")
 
 [node name="Moneda 2" type="Area2D" parent="." unique_id=507870965]
-position = Vector2(3423, 338)
+position = Vector2(3314, 365)
 script = ExtResource("11_yntmh")
 
 [node name="Sprite2D" type="Sprite2D" parent="Moneda 2" unique_id=1656296031]
 texture_filter = 1
-position = Vector2(2.0000267, -1.0000076)
+position = Vector2(100.000015, -24.000006)
 scale = Vector2(4.66666, 4.277778)
 texture = ExtResource("11_18jkx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda 2" unique_id=288770347]
-position = Vector2(1, 0)
+position = Vector2(100, -24)
 shape = SubResource("RectangleShape2D_yntmh")
 
 [node name="Moneda 3" type="Area2D" parent="." unique_id=697045968]
@@ -158,6 +173,20 @@ texture_filter = 1
 position = Vector2(1.0001335, -1.0000153)
 scale = Vector2(3.666652, 3.75)
 texture = ExtResource("11_18jkx")
+
+[node name="Moneda 4" type="Area2D" parent="." unique_id=838964321]
+position = Vector2(6417, 611)
+script = ExtResource("11_yntmh")
+
+[node name="Sprite2D" type="Sprite2D" parent="Moneda 4" unique_id=1481456341]
+texture_filter = 1
+position = Vector2(8.0000305, 0.9999924)
+scale = Vector2(4.66666, 4.277778)
+texture = ExtResource("11_18jkx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda 4" unique_id=1000701444]
+position = Vector2(7, -2)
+shape = SubResource("RectangleShape2D_yntmh")
 
 [node name="Clau" type="Area2D" parent="." unique_id=484497036]
 position = Vector2(7024, 295)
@@ -179,5 +208,6 @@ texture = ExtResource("15_rrt2d")
 [connection signal="body_entered" from="Moneda 2" to="Moneda 2" method="_on_body_entered"]
 [connection signal="body_entered" from="Moneda 3" to="Jugador" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Moneda 3" to="Moneda 3" method="_on_body_entered"]
+[connection signal="body_entered" from="Moneda 4" to="Moneda 4" method="_on_body_entered"]
 [connection signal="body_entered" from="Clau" to="Victoria" method="_on_clau_body_entered"]
 [connection signal="body_entered" from="Clau" to="Clau" method="_on_body_entered"]
