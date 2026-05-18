@@ -1,19 +1,19 @@
 [gd_scene format=4 uid="uid://jjcsvtcksc6w"]
 
 [ext_resource type="PackedScene" uid="uid://b338gk0gnrcw5" path="res://Escenes/limits.tscn" id="1_l3s5o"]
-[ext_resource type="Script" path="res://Escenes/victoria.gd" id="2_1t78s"]
+[ext_resource type="Script" uid="uid://bw6gsguhbki5q" path="res://Escenes/victoria.gd" id="2_1t78s"]
 [ext_resource type="PackedScene" uid="uid://byg751miffq3a" path="res://Escenes/fons_verd.tscn" id="2_yip7x"]
 [ext_resource type="PackedScene" uid="uid://bw5bvr4hk7gs2" path="res://Escenes/cors/buit_buit_buit.tscn" id="3_djj6t"]
 [ext_resource type="PackedScene" uid="uid://bfkgohfw46lm6" path="res://Escenes/cors/ple_ple_ple.tscn" id="3_o1kua"]
-[ext_resource type="Script" path="res://Escenes/coins.gd" id="3_yntmh"]
+[ext_resource type="Script" uid="uid://ccm53a3i0ujml" path="res://Escenes/coins.gd" id="3_yntmh"]
 [ext_resource type="PackedScene" uid="uid://dpftp084oc1fx" path="res://Escenes/cors/ple_ple_buit.tscn" id="4_08yld"]
 [ext_resource type="PackedScene" uid="uid://bhwlm2nhwgaac" path="res://Escenes/personatge.tscn" id="4_dx0qk"]
 [ext_resource type="PackedScene" uid="uid://cdxv3tfdyjtd1" path="res://Escenes/cors/ple_buit_buit.tscn" id="5_18jkx"]
 [ext_resource type="PackedScene" uid="uid://dnbykqjqri5ye" path="res://Escenes/tile_map_layer.tscn" id="5_rm3ff"]
 [ext_resource type="PackedScene" uid="uid://dcbj3nfffa8h3" path="res://Escenes/champi.tscn" id="7_4pnwr"]
 [ext_resource type="Texture2D" uid="uid://bxp1d0fl1luju" path="res://Imatges/Tiles/tile_0151.png" id="11_18jkx"]
-[ext_resource type="Script" path="res://MonedaScript.gd" id="11_yntmh"]
-[ext_resource type="Script" path="res://Escenes/clau.gd" id="14_dg7eb"]
+[ext_resource type="Script" uid="uid://fihtk84ng1cn" path="res://MonedaScript.gd" id="11_yntmh"]
+[ext_resource type="Script" uid="uid://cf2xualbkikf7" path="res://Escenes/clau.gd" id="14_dg7eb"]
 [ext_resource type="Texture2D" uid="uid://cxrpfatem6psc" path="res://Imatges/Tiles/tile_0027.png" id="15_rrt2d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_18jkx"]
@@ -112,6 +112,7 @@ offset_bottom = 336.0
 position = Vector2(432, 348)
 
 [node name="limits" parent="." unique_id=141493624 instance=ExtResource("1_l3s5o")]
+position = Vector2(1, 0)
 
 [node name="champi" parent="." unique_id=1481720234 instance=ExtResource("7_4pnwr")]
 position = Vector2(414, 521)

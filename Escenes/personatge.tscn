@@ -22,6 +22,7 @@ animations = [{
 }]
 
 [node name="Jugador" type="CharacterBody2D" unique_id=293533736]
+position = Vector2(6, -1)
 script = ExtResource("1_ttrkr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1783962689]
