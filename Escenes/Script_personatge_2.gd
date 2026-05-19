@@ -44,8 +44,9 @@ func mor() -> void:
 	$GO.text = "GAME OVER, press ENTER to try again"
 
 func _on_moneda_1_body_entered(body: Node2D) -> void:
-	n = n + 1
-	$Coins.text = "Monedes:" + str(n)
+	if body.name == "Jugador": 
+		n = n + 1
+		$Coins.text = "Monedes:" + str(n)
 	
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	n = n + 1

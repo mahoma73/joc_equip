@@ -17,7 +17,7 @@ func _physics_process(delta: float) -> void:
 
 func anima(vel: float) -> void:
 	animated_sprite_2d.play("animacio_champi")
-	animated_sprite_2d.flip_h = vel < 0
+	animated_sprite_2d.flip_h = vel > 0
 
 func _on_mort_champi_body_entered(body: Node2D) -> void:
 	if body.name == "Jugador":
