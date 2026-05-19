@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dpebrmkrqqvph" path="res://Escenes/Cors_Nivell_2/ple_ple.tscn" id="7_wlk08"]
 [ext_resource type="Script" uid="uid://bcu1cdu1oq76w" path="res://Escenes/Moneda_Script_2.gd" id="10_q8eyt"]
 [ext_resource type="Texture2D" uid="uid://bxp1d0fl1luju" path="res://Imatges/Tiles/tile_0151.png" id="10_ygxba"]
+[ext_resource type="PackedScene" uid="uid://3h63i78i4xrx" path="res://Escenes/minibomba.tscn" id="11_q8eyt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q8eyt"]
 size = Vector2(61, 44)
@@ -86,6 +87,12 @@ texture_filter = 1
 position = Vector2(45.34226, 21.370918)
 scale = Vector2(5.18419, 4.152325)
 texture = ExtResource("10_ygxba")
+
+[node name="minibomba" parent="." unique_id=722177129 instance=ExtResource("11_q8eyt")]
+position = Vector2(651, -4)
+
+[node name="minibomba2" parent="." unique_id=1988814201 instance=ExtResource("11_q8eyt")]
+position = Vector2(1737, 3)
 
 [connection signal="body_entered" from="Moneda_1" to="Jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="Moneda_1" to="Moneda_1" method="_on_body_entered"]
