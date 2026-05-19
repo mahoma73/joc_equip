@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://3h63i78i4xrx" path="res://Escenes/minibomba.tscn" id="11_q8eyt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q8eyt"]
-size = Vector2(61, 44)
+size = Vector2(66, 49)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ygxba"]
 size = Vector2(72.30316, 52.979065)
@@ -28,7 +28,7 @@ tile_map_data = PackedByteArray("AAAAAAkAAAACAAMAAAABAAkAAAACAAMAAAACAAkAAAACAAM
 [node name="limits" parent="." unique_id=141493624 instance=ExtResource("2_86xyr")]
 
 [node name="champi" parent="." unique_id=742414083 instance=ExtResource("4_03n4g")]
-position = Vector2(474, 462)
+position = Vector2(477, 462)
 
 [node name="Victoria" type="Label" parent="." unique_id=1736747930]
 offset_left = 6758.547
@@ -71,7 +71,7 @@ scale = Vector2(5.2329507, 4.1635103)
 texture = ExtResource("10_ygxba")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Moneda_1" unique_id=1522693869]
-position = Vector2(13.772705, -6.272705)
+position = Vector2(11.272705, -8.772705)
 shape = SubResource("RectangleShape2D_q8eyt")
 
 [node name="Moneda_2" type="Area2D" parent="." unique_id=582357847]
