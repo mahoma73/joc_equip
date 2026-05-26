@@ -22,13 +22,14 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func restar_vida() -> void:
-	vides -= 1
-	if vides == 0:
-		mor()
+	if playing == true:
+		vides -= 1
+		if vides == 0:
+			mor()
 
 func mor() -> void:
 	playing = false
-	$GO.text = "GAME OVER, press ENTER to try again"
+	$GO.text = "GAME OVER, apreta ENTER per tornar a jugar"
 
 
 func _on_moneda_1_body_entered(body: Node2D) -> void:

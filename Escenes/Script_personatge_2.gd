@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 300
 const JUMP_VELOCITY = -400.0
-var vides: int = 3
+var vides: int = 2
 var playing : bool = true
 var n = 0
 
@@ -24,14 +24,16 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		
+	if position.y >3000:
+		mor()
+	
 	move_and_slide()
 
 func restar_vida() -> void:
 	if playing == false:
 		return
 		
-	var nom_cor = "Vides_" + str(vides - 1)
+	var nom_cor = "Vides_" + str(vides)
 	if has_node(nom_cor):
 		get_node(nom_cor).queue_free()
 	
@@ -41,7 +43,7 @@ func restar_vida() -> void:
 
 func mor() -> void:
 	playing = false
-	$GO.text = "GAME OVER, press ENTER to try again"
+	$GO.text = "GAME OVER, apreta ENTER per tornar a jugar"
 
 func _on_moneda_1_body_entered(body: Node2D) -> void:
 	if body.name == "Jugador": 

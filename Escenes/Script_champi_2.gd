@@ -32,3 +32,4 @@ func _on_mort_jugador_body_entered(body: Node2D) -> void:
 		body.restar_vida()
 		await get_tree().create_timer(1.0).timeout
 		pot_fer_mal = true
+	
