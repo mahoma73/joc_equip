@@ -91,7 +91,7 @@ script = ExtResource("3_yntmh")
 
 [node name="vides1" parent="Jugador" unique_id=62549296 instance=ExtResource("5_18jkx")]
 
-[node name="vides0" parent="Jugador" unique_id=1629713046 instance=ExtResource("3_djj6t")]
+[node name="vides" parent="Jugador" unique_id=1629713046 instance=ExtResource("3_djj6t")]
 
 [node name="fons_arbres_verd" parent="Jugador" unique_id=489414321 instance=ExtResource("2_yip7x")]
 z_index = -1
